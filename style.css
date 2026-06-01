@@ -1054,3 +1054,176 @@ blockquote span{
   }
 
 }
+/* ===== PROGRAMA VERANO ===== */
+
+.summer-hero{
+    max-width:1100px;
+    margin:180px auto 120px;
+    padding:0 50px;
+}
+
+.summer-hero h1{
+    font-size:96px;
+    font-weight:400;
+    line-height:1;
+    margin:20px 0 40px;
+}
+
+.eyebrow{
+    font-size:14px;
+    letter-spacing:4px;
+    color:#888;
+}
+
+.intro{
+    max-width:800px;
+    font-size:34px;
+    line-height:1.7;
+    color:#444;
+}
+
+.summer-features{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 50px;
+}
+
+.summer-card{
+    padding:80px 0;
+    border-top:1px solid #e5e5e5;
+}
+
+.summer-card:last-child{
+    border-bottom:1px solid #e5e5e5;
+}
+
+.number{
+    color:#999;
+    font-size:16px;
+}
+
+.summer-card h2{
+    font-size:64px;
+    font-weight:400;
+    margin:20px 0;
+}
+
+.summer-card p{
+    max-width:700px;
+    font-size:28px;
+    line-height:1.8;
+    color:#555;
+}
+
+.summer-details{
+    max-width:1100px;
+    margin:150px auto;
+    padding:0 50px;
+}
+
+.detail-line{
+    padding:30px 0;
+    border-top:1px solid #e5e5e5;
+    font-size:32px;
+}
+
+.detail-line:last-child{
+    border-bottom:1px solid #e5e5e5;
+}
+
+.summer-investment{
+    max-width:1100px;
+    margin:180px auto;
+    padding:0 50px;
+    text-align:center;
+}
+
+.summer-investment h2{
+    font-size:72px;
+    font-weight:400;
+    margin:20px 0 80px;
+}
+
+.investment-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:120px;
+}
+
+.investment-item h3{
+    font-size:42px;
+    font-weight:400;
+    margin-bottom:15px;
+}
+
+.investment-item p{
+    color:#666;
+    font-size:22px;
+}
+
+.price{
+    margin-top:25px;
+    font-size:72px;
+    font-weight:400;
+}
+
+.summer-closing{
+    max-width:1000px;
+    margin:200px auto;
+    padding:0 50px;
+    text-align:center;
+}
+
+.closing-text{
+    font-size:30px;
+    line-height:1.9;
+    color:#555;
+}
+
+.summer-closing h2{
+    margin-top:120px;
+    font-size:80px;
+    font-weight:400;
+    line-height:1.1;
+}
+
+@media(max-width:768px){
+
+    .summer-hero h1{
+        font-size:56px;
+    }
+
+    .intro{
+        font-size:24px;
+    }
+
+    .summer-card h2{
+        font-size:42px;
+    }
+
+    .summer-card p{
+        font-size:22px;
+    }
+
+    .detail-line{
+        font-size:24px;
+    }
+
+    .summer-investment h2{
+        font-size:46px;
+    }
+
+    .investment-grid{
+        grid-template-columns:1fr;
+        gap:60px;
+    }
+
+    .price{
+        font-size:56px;
+    }
+
+    .summer-closing h2{
+        font-size:52px;
+    }
+
+}
