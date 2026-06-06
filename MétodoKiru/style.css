@@ -144,6 +144,14 @@ h1{
   background:#111;
   color:white;
   border:1px solid #111;
+
+}
+.primary,
+.primary:visited,
+.primary:hover,
+.primary:focus,
+.primary:active{
+  color:white !important;
 }
 
 .primary:hover{
@@ -158,6 +166,10 @@ h1{
 .secondary:hover{
   background:#111;
   color:white;
+}
+.secondary,
+.secondary:visited{
+  color:#111 !important;
 }
 
 /* =========================
@@ -551,14 +563,11 @@ blockquote span{
   line-height:1.7;
   color:#444;
 }
-/* ENLACES */
+a{
+  text-decoration:none;
+}
 
-a,
-a:hover,
-a:focus,
-a:active,
 a:visited{
-  color:inherit;
   text-decoration:none;
 }
 
