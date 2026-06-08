@@ -220,47 +220,106 @@ blockquote span{
 }
 
 /* =========================
-   TABLAS (PROGRAMAS Y TARIFAS)
+   (PROGRAMAS Y TARIFAS)
 ========================= */
 
-.programs{
-  max-width:1400px;
-  margin:auto;
-  padding:80px 7%;
+.programas-comparacion{
+  max-width:1100px;
+  margin:80px auto;
+  padding:0 20px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
 }
 
-.table-container{
-  overflow-x:auto;
-  margin-top:30px;
+.programa-card{
+  background:#f9f4ec;
+  border:1px solid #e4d8c7;
+  border-radius:20px;
+  padding:35px;
+  position:relative;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 
-.program-table{
-  width:100%;
-  min-width:900px;
-  border-collapse:collapse;
-  background:white;
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,.04);
+.programa-card.destacado{
+  border:2px solid #c8a97e;
+  transform:scale(1.02);
 }
 
-.program-table th{
-  background:#f1f1ee;
-  padding:20px;
-  text-align:left;
-  font-size:15px;
+.etiqueta{
+  position:absolute;
+  top:-12px;
+  right:20px;
+
+  background:#c8a97e;
+  color:white;
+
+  padding:8px 16px;
+  border-radius:999px;
+
+  font-size:.8rem;
   font-weight:600;
 }
 
-.program-table td{
-  padding:22px 20px;
-  border-top:1px solid #ececec;
-  vertical-align:top;
-  line-height:1.6;
+.programa-header{
+  margin-bottom:25px;
 }
 
-.program-table td:not(:first-child):not(:last-child){
-  text-align:center;
+.programa-header h3{
+  color:#3d342b;
+  margin-bottom:6px;
+  font-size:1.8rem;
+}
+
+.programa-header p{
+  color:#8b7b68;
+}
+
+.programa-card ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.programa-card li{
+  padding:12px 0;
+  border-bottom:1px solid #e8ddd0;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.programa-card li.si::before{
+  content:"✓";
+  color:#8a9a5b;
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+.programa-card li.no::before{
+  content:"✕";
+  color:#c2b5a4;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+
+.beneficio{
+  margin-top:30px;
+  padding-top:20px;
+  border-top:1px solid #d9ccb9;
+}
+
+.beneficio strong{
+  display:block;
+  margin-bottom:10px;
+  color:#3d342b;
+}
+
+.beneficio p{
+  color:#6b6258;
+  line-height:1.6;
 }
 
 .program-note{
@@ -272,6 +331,74 @@ blockquote span{
 
 .program-note p{
   margin-bottom:10px;
+}
+.tarifas-grid{
+  max-width:1000px;
+  margin:60px auto;
+  padding:0 20px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}
+
+.tarifa-card{
+  background:#f9f4ec;
+  border:1px solid #e4d8c7;
+  border-radius:20px;
+  padding:35px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.05);
+  position:relative;
+}
+
+.tarifa-card.destacado{
+  border:2px solid #c8a97e;
+}
+
+.tarifa-card h3{
+  text-align:center;
+  margin-bottom:25px;
+  color:#3d342b;
+  font-size:1.8rem;
+}
+
+.precio-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px 0;
+
+  border-bottom:1px solid #e4d8c7;
+}
+
+.precio-item:last-child{
+  border-bottom:none;
+}
+
+.precio-item span{
+  color:#6b6258;
+}
+
+.precio-item strong{
+  font-size:1.2rem;
+  color:#3d342b;
+}
+
+.etiqueta{
+  position:absolute;
+  top:-12px;
+  right:20px;
+
+  background:#c8a97e;
+  color:white;
+
+  padding:8px 16px;
+  border-radius:999px;
+
+  font-size:.8rem;
+  font-weight:600;
 }
 
 /* =========================
